@@ -47,10 +47,68 @@ function secondCardShowText() {
 }
 
 
+
 function thirdCardShowText() {
     var dots = document.getElementById("thirdDots");
     var moreText = document.getElementById("thirdMore");
     var btnText = document.getElementById("btn thirdReadMore");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+        btnText.style.backgroundColor = '#00ff00'
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+        btnText.style.backgroundColor = '#F81894'
+
+    }
+}
+
+function forthCardShowText() {
+    var dots = document.getElementById("forthDots");
+    var moreText = document.getElementById("forthMore");
+    var btnText = document.getElementById("btn forthReadMore");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+        btnText.style.backgroundColor = '#00ff00'
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+        btnText.style.backgroundColor = '#F81894'
+
+    }
+}
+
+function firthCardShowText() {
+    var dots = document.getElementById("firthDots");
+    var moreText = document.getElementById("firthMore");
+    var btnText = document.getElementById("btn firthReadMore");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+        btnText.style.backgroundColor = '#00ff00'
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+        btnText.style.backgroundColor = '#F81894'
+
+    }
+}
+
+function sixCardShowText() {
+    var dots = document.getElementById("sixDots");
+    var moreText = document.getElementById("sixMore");
+    var btnText = document.getElementById("btn sixReadMore");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
