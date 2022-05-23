@@ -10,11 +10,14 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
-     <style>
+    <style>
         body {
-            background-color: #f6f7fb;
+            background-image: url("./img/White_Background_generated.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
         }
     </style>
 
@@ -47,7 +50,7 @@
                 <div class="container">
 
                     <div class="logo">
-                        <img src="./img/mphofela.svg" alt="">
+                        <h4>Profile</h4>
                     </div>
 
                     <div class="links">
@@ -85,16 +88,20 @@
             <div class="header-content">
                 <div class="container grid-2">
                     <div class="column-1">
+                        <h3 class="title-sm">Hello, i'm <span id="my-name">Mphofela Ntshephe </span> </h3>
                         <h1 class="header-title" data-text="Software Developer!"><span id="soft">Soft</span><span id="ware">ware</span> <span id="deve">Deve</span><span id="loper">loper!</span></h1>
                         <p class="text">
-                            Hello, i'm Mphofela Ntshephe Crecious, a developer who's highly motivated, skilled, and looking for a mentorship and challenging career opportunity to learn and grow my skills, while delivering best and suitable software for your business.
+                            A Software developer who's highly motivated, skilled, and looking for a mentorship and challenging career opportunity to learn and grow my skills, while delivering best and suitable software for your business.
                         </p>
-                        <a href="Ntshephe CV New.pdf" class="btn-download" download="Mphofela Ntshephe's CV" id="btn-download">Download CV</a>
+
+                        <a href="" class="btn-download" download="" id="btn-download">Download CV</a>
+
+
                     </div>
 
                     <div class="column-2 image">
                         <img src="./img/dotttttttt.svg" class="points point2" alt="" />
-                        <img src="./img/undraw_programming_re_kg9v.svg" class="img-element z-index" alt="" />
+                        <img src="./designs/undraw_progressive_app_m-9-ms.svg" class="img-element z-index" alt="" />
                     </div>
 
                 </div>
@@ -111,8 +118,8 @@
                 </div>
 
                 <div class="cards">
-                    <div class="card-wrap">
-                        <div class="card" data-card="code">
+                    <div class="card-wrap" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="card" data-card="CODE">
                             <div class="card-content">
                                 <img src="./img/software.png" class="icon" alt="">
                                 <h3 class="title-sm">Software Development</h3>
@@ -125,7 +132,7 @@
                     </div>
 
 
-                    <div class="card-wrap">
+                    <div class="card-wrap" data-aos="flip-up" data-aos-duration="1000">
                         <div class="card" data-card="UI/UX">
                             <div class="card-content">
                                 <img src="./img/graphicdesign.png" class="icon" alt="">
@@ -136,8 +143,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-wrap">
-                        <div class="card" data-card="PC">
+                    <div class="card-wrap" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="card" data-card="TECH">
                             <div class="card-content">
                                 <img src="./img/technicalsupport.png" class="icon" alt="">
                                 <h3 class="title-sm">Technical Support</h3>
@@ -147,7 +154,49 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="card-wrap" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="card" data-card="Mobile">
+                            <div class="card-content">
+                                <img src="./img/mobile-development.png" class="icon" alt="">
+                                <h3 class="title-sm">Android Development</h3>
+                                <p class="text">Create, Maintain and implement source code to develop mobile apps and mobile platforms programs that meets <span id="forthDots">...</span> <span id="forthMore">
+                                         the needs amd requirements of the client using Java or c++ programming language.</span>
+                                </p>
+                                <a onclick="forthCardShowText()" id="btn forthReadMore" class="btn forthReadMore"> Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-wrap" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="card" data-card="Database">
+                            <div class="card-content">
+                                <img src="./img/database-storage.png" class="icon" alt="">
+                                <h3 class="title-sm">Database Design</h3>
+                                <p class="text">Plan, Create and code local and server based databases using SQLite, Firebase, MySql. Identify needs for databases,<span id="firthDots">...</span> <span id="firthMore">and conduct testing and implement improvements while monitoring database
+                                        performance</span>
+                                </p>
+                                <a onclick="firthCardShowText()" id="btn firthReadMore" class="btn firthReadMore"> Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="card" data-card="Desk">
+                            <div class="card-content">
+                                <img src="./img/technical-support.png" class="icon" alt="">
+                                <h3 class="title-sm">IT HelpDesk</h3>
+                                <p class="text">Serving as the first point of contact for customers seeking technical assistance over the phone or email.<span id="sixDots">...</span><span id="sixMore"> 
+                                        Performing remote troubleshooting through diagnostic techniques and pertinent questions and determining the best solutions based on the issues and details provided.
+                                    </span>
+                                </p>
+                                <a onclick="sixCardShowText()" id="btn sixReadMore" class="btn sixReadMore"> Read more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -197,7 +246,6 @@
                                     <div class="plus"></div>
                                     <div class="img-discription">
                                         <h3>Web Development</h3>
-                                        <h5>View Demo</h5>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +257,6 @@
                                     <div class="plus"></div>
                                     <div class="img-discription">
                                         <h3>App Development</h3>
-                                        <h5>View Demo</h5>
                                     </div>
                                 </div>
                             </div>
@@ -221,19 +268,6 @@
                                     <div class="plus"></div>
                                     <div class="img-discription">
                                         <h3>Web Design</h3>
-                                        <h5>View Demo</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item appdev">
-                            <div class="gallery-image">
-                                <img src="./designs/edumile.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>App Development</h3>
-                                        <h5>View Demo</h5>
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +280,6 @@
                                     <div class="plus"></div>
                                     <div class="img-discription">
                                         <h3>App Development</h3>
-                                        <h5>View Demo</h5>
                                     </div>
                                 </div>
                             </div>
@@ -269,31 +302,6 @@
                                     <div class="plus"></div>
                                     <div class="img-discription">
                                         <h3>UI Design</h3>
-                                        <h5>View Demo</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item ui">
-                            <div class="gallery-image">
-                                <img src="./designs/ui.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>UI/UX Design</h3>
-                                        <h5>View Demo</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item appdev ui">
-                            <div class="gallery-image">
-                                <img src="./designs/eduXploreVas.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>UI APP Design</h3>
-                                        <h5>View Demo</h5>
                                     </div>
                                 </div>
                             </div>
@@ -313,155 +321,203 @@
 
                 <div class="section-body grid-2">
                     <div class="column-1">
-                        <h3 class="title-sm">Hello, i'm</h3>
-                        <p class="text">
+                        <h3 class="title-sm" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Hello, i'm</h3>
+                        <p class="text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             Mphofela Ntshephe Crecious, A highly organized and motivated hard-working individual looking for a responsible programming position to gain practical experience and secure a responsible career opportunity to fully utilize my skills, while making a significant
                             contribution to the success of the company.
                         </p>
-                        <div class="skills">
-                            <div class="skill java">
-                                <h3 class="skill-title">JAVA</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="70%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill cpp">
-                                <h3 class="skill-title">C++</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill html">
-                                <h3 class="skill-title">HTML</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="75%"></div>
-                                </div>
-                            </div>
-                            <div class="skill css">
-                                <h3 class="skill-title">CSS</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="65%"></div>
-                                </div>
-                            </div>
-                            <span id="nothing"></span><span id="moreSkills">
-                            <div class="skill javascript">
-                                <h3 class="skill-title">JavaScript</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="58%"></div>
-                                </div>
-                            </div>
-                            <div class="skill Csharp">
-                                <h3 class="skill-title">C#</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="35%"></div>
-                                </div>
-                            </div>
-                            <div class="skill sqlDatabase">
-                                <h3 class="skill-title">PL/SQL Database</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill firebase">
-                                <h3 class="skill-title">Firebase Database</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="75%"></div>
-                                </div>
-                            </div>
-                        </span>
-                        </div>
-
-                        <a onclick="showSkills()" id="btn expandSkills" class="btn expandSkills">More Skills</a>
 
                     </div>
                     <div class="column-2 image">
                         <img src="./img/dotttttttt.svg" class="points" alt="" />
-                        <img src="./img/undraw_grid_design_obmd.svg" class="z-index" alt="" />
+                        <img src="./designs/undraw_online_cv_re_gn0a.svg" class="z-index" alt="" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" />
                     </div>
                 </div>
+
+                <div class="skills">
+                    <div class="container">
+                        <div class="text">
+                            <h2>Technical SKills</h2>
+                            <p>My Experiences and skills in Information Technology</p>
+                        </div>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fab fa-deskpro"></i>
+                            <h4>Front-End</h4>
+                            <p>Advanced skills in designing user friendly interfaces</p>
+                        </div>
+                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fas fa-keyboard"></i>
+                            <h4>Back-End</h4>
+                            <p> Intermediate skills in coding back-end to support the front-end design</p>
+                        </div>
+                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h4>Design</h4>
+                            <p> Advanced designing skills, including using Adobe illustrator to design Logo</p>
+                        </div>
+                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fas fa-mobile"></i>
+                            <h4>Data Analysis</h4>
+                            <p> Advanced skills in using SQL to monitor and troubleshoot data</p>
+                        </div>
+                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fab fa-linux"></i>
+                            <h4>C++ Programming</h4>
+                            <p> Advanced skills in coding IOS and desktop applications using c++</p>
+                        </div>
+                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
+                            <i class=" fab fa-html5 "></i>
+                            <h4>Html and CSS</h4>
+                            <p> Advanced skills in coding front-end pages with html and css</p>
+                        </div>
+                        <div class="cardskill " data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fab fa-java"></i>
+                            <h4>javascript</h4>
+                            <p> Basic skills in javascript, jquery and reactjs </p>
+                        </div>
+                        <div class="cardskill " data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fas fa-database "></i>
+                            <h4>Database</h4>
+                            <p> Advanced skills in creating, and modifying PL/SQl, SQLite, Firebase and MySql databses </p>
+                        </div>
+                        <div class="cardskill " data-aos="flip-up" data-aos-duration="1000">
+                            <i class="fab fa-android"></i>
+                            <h4>Java Android Development</h4>
+                            <p> Superp skills in developing android applications with android studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal-skills">
+                    <div class="text">
+                        <h2>Personal Skills</h2>
+                        <p>My personal and work environment skills</p>
+                    </div>
+                    <div class="personal-skills-card">
+                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="90"> 90%</div>
+                            <h2>Creativity</h2>
+                        </div>
+                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="85"> 85%</div>
+                            <h2>Problem Solving</h2>
+                        </div>
+                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="80"> 80%</div>
+                            <h2>Communication</h2>
+                        </div>
+                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="75"> 75%</div>
+                            <h2>Organizational</h2>
+                        </div>
+                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="95"> 95%</div>
+                            <h2>Team Work</h2>
+                        </div>
+                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="78"> 78%</div>
+                            <h2>Flexibility and Adaptability</h2>
+                        </div>
+                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="89"> 89%</div>
+                            <h2>Decision Making</h2>
+                        </div>
+                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="79"> 79%</div>
+                            <h2>Analytical Thinking</h2>
+                        </div>
+                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="chart" data-percent="80"> 96%</div>
+                            <h2>Reliabilty and Patience</h2>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
         </section>
 
-        <section class="records">
-            <div class="overlay overlay-sm">
-                <img src="./img/mandala.png" class="shape mandala" alt="">
-                <img src="./img/geometrical.png" class="shape geometrical" alt="">
-                <img src="./img/abstract.png" class="shape abstract" alt="">
-                <img src="./img/cubes.png" class="shape cubes" alt="">
-                <img src="./img/code.png" class="shape code" alt="">
-                <img src="./img/heart.png" class="shape heart" alt="">
-                <img src="./img/lettern.png" class="shape lettern" alt="">
-                <img src="./img/hexagon.png" class="shape hexagonshape" alt="" />
+        <section class="records ">
+            <div class="overlay overlay-sm ">
+                <img src="./img/mandala.png " class="shape mandala " alt=" ">
+                <img src="./img/geometrical.png " class="shape geometrical " alt=" ">
+                <img src="./img/abstract.png " class="shape abstract " alt=" ">
+                <img src="./img/cubes.png " class="shape cubes " alt=" ">
+                <img src="./img/code.png " class="shape code " alt=" ">
+                <img src="./img/heart.png " class="shape heart " alt=" ">
+                <img src="./img/lettern.png " class="shape lettern " alt=" ">
+                <img src="./img/hexagon.png " class="shape hexagonshape " alt=" " />
             </div>
-            <div class="container">
-                <div class="wrap">
-                    <div class="record-circle active">
-                        <h2 class="number" data-num="5">0</h2>
-                        <h4 class="sub-title">Projects</h4>
+            <div class="container ">
+                <div class="wrap " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="record-circle active ">
+                        <h2 class="number " data-num="5 ">0</h2>
+                        <h4 class="sub-title ">Projects</h4>
                     </div>
                 </div>
 
-                <div class="wrap">
-                    <div class="record-circle">
-                        <h2 class="number" data-num="20">0</h2>
-                        <h4 class="sub-title">Happy Clients</h4>
+                <div class="wrap " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="record-circle ">
+                        <h2 class="number " data-num="20 ">0</h2>
+                        <h4 class="sub-title ">Happy Clients</h4>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="contact-box">
-                    <div class="contact-info">
-                        <h3 class="title">Let's have a talk!</h3>
-                        <p class="text">
+        <section class="contact " id="contact ">
+            <div class="container ">
+                <div class="contact-box " data-aos="zoom-in-down" data-aos-duration="1000">
+                    <div class="contact-info ">
+                        <h3 class="title ">Let's have a talk!</h3>
+                        <p class="text ">
                             Want to get in touch with me? feel free to contact me on the below information.
                         </p>
-                        <div class="information-wrap">
-                            <div class="information">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
+                        <div class="information-wrap ">
+                            <div class="information ">
+                                <div class="contact-icon ">
+                                    <i class="fas fa-map-marker-alt "></i>
                                 </div>
-                                <p class="info-text">117 Block T Soshanguve, Pretoria, 0152</p>
+                                <p class="info-text ">117 Block T Soshanguve, Pretoria, 0152</p>
                             </div>
 
-                            <div class="information">
-                                <div class="contact-icon">
-                                    <i class="fas fa-paper-plane"></i>
+                            <div class="information ">
+                                <div class="contact-icon ">
+                                    <i class="fas fa-paper-plane "></i>
                                 </div>
-                                <p class="info-text">ntshephecrecious@gmail.com</p>
+                                <p class="info-text ">ntshephecrecious@gmail.com</p>
                             </div>
 
-                            <div class="information">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
+                            <div class="information ">
+                                <div class="contact-icon ">
+                                    <i class="fas fa-phone "></i>
                                 </div>
-                                <p class="info-text">0728795836 / 0683286012</p>
+                                <p class="info-text ">0728795836 / 0683286012</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-form">
-                        <h3 class="title">Get In touch!</h3>
+                    <div class="contact-form ">
+                        <h3 class="title ">Get In touch!</h3>
 
-                        <form id="myForm">
-                            <div class="row">
-                                <input type="text" class="contact-input" id="name" placeholder="First Name">
-                                <input type="text" class="contact-input" id="surname" placeholder="Last Name">
+                        <form id="myForm ">
+                            <div class="row ">
+                                <input type="text " class="contact-input " id="name " placeholder="First Name ">
+                                <input type="text " class="contact-input " id="surname " placeholder="Last Name ">
                             </div>
-                            <div class="row">
-                                <input type="tel" class="contact-input" id="phone" placeholder="Phone Number" maxlength="10" pattern="\d{10}">
-                                <input type="email" class="contact-input" id="email" placeholder="Email add">
+                            <div class="row ">
+                                <input type="tel " class="contact-input " id="phone " placeholder="Phone Number " maxlength="10 " pattern="\d{10} ">
+                                <input type="email " class="contact-input " id="email " placeholder="Email add ">
                             </div>
-                            <div class="row">
-                                <textarea class="contact-input textarea" id="message" placeholder="message"></textarea>
+                            <div class="row ">
+                                <textarea class="contact-input textarea " id="message " placeholder="message "></textarea>
                             </div>
 
-                            <button type="submit" id="submit" class="submitBtn">Submit</button>
+                            <button type="submit " id="submit " class="submitBtn ">Submit</button>
 
                         </form>
 
@@ -473,111 +529,111 @@
         </section>
 
 
-        <section class="hireme" id="hireme">
-            <div class="container">
-                <h3 class="title">Let's talk about the project</h3>
-                <p class="text">
+        <section class="hireme " id="hireme ">
+            <div class="container " data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h3 class="title ">Let's talk about the project</h3>
+                <p class="text ">
                     You can tell us what's hurting your business and we'll reach far beyond the ordinary to ensure a major sucess in your daily business objectives.
                 </p>
 
-                <a onclick="gotoContact()" id="hire-me" class="btn">Hire me</a>
+                <a onclick="gotoContact() " id="hire-me " class="btn ">Hire me</a>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="grid-3">
-                <div class="grid-3-col footer-about">
-                    <h3 class="title-sm">About Me</h3>
-                    <p class="text">
+    <footer class="footer ">
+        <div class="container ">
+            <div class="grid-3 ">
+                <div class="grid-3-col footer-about ">
+                    <h3 class="title-sm ">About Me</h3>
+                    <p class="text ">
                         A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company.
                     </p>
                 </div>
-                <div class="grid-3-col footer-links">
-                    <h3 class="title-sm">Links</h3>
+                <div class="grid-3-col footer-links ">
+                    <h3 class="title-sm ">Links</h3>
                     <ul>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="#services ">Services</a>
                         </li>
 
                         <li>
-                            <a href="#portfolio">Portfolio</a>
+                            <a href="#portfolio ">Portfolio</a>
                         </li>
 
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#about ">About</a>
                         </li>
 
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="#contact ">Contact</a>
                         </li>
 
                         <li>
-                            <a href="#hireme">Hire me</a>
+                            <a href="#hireme ">Hire me</a>
                         </li>
                     </ul>
                 </div>
-                <div class="grid-3-col footer-links">
-                    <h3 class="title-sm">Services</h3>
+                <div class="grid-3-col footer-links ">
+                    <h3 class="title-sm ">Services</h3>
                     <ul>
                         <li>
-                            <a href="#portfolio">App Development</a>
+                            <a href="#portfolio ">App Development</a>
                         </li>
 
                         <li>
-                            <a href="#portfolio">Technical Support</a>
+                            <a href="#portfolio ">Technical Support</a>
                         </li>
 
                         <li>
-                            <a href="#portfolio">Web Design</a>
+                            <a href="#portfolio ">Web Design</a>
                         </li>
 
                         <li>
-                            <a href="#portfolio">Database Design</a>
+                            <a href="#portfolio ">Database Design</a>
                         </li>
 
                         <li>
-                            <a href="#portfolio">Logo Design</a>
+                            <a href="#portfolio ">Logo Design</a>
                         </li>
                     </ul>
                 </div>
 
             </div>
 
-            <div class="bottom-footer">
-                <div class="copyright">
-                    <p class="text">
+            <div class="bottom-footer ">
+                <div class="copyright ">
+                    <p class="text ">
                         Copyrights&copy;2022 All rights reserved | By
                         <span> Mphofela NC</span>
                     </p>
                 </div>
-                <div class="followme-wrap">
-                    <div class="followme">
+                <div class="followme-wrap ">
+                    <div class="followme ">
                         <h3>Follow me</h3>
-                        <span class="footer-line"></span>
-                        <div class="social-media">
-                            <a href="https://www.facebook.com/ntshepza.mphofela">
-                                <i class="fab fa-facebook"></i>
+                        <span class="footer-line "></span>
+                        <div class="social-media ">
+                            <a href="https://www.facebook.com/ntshepza.mphofela ">
+                                <i class="fab fa-facebook "></i>
                             </a>
 
-                            <a href="https://www.twitter.com/@Ntshepza1">
-                                <i class="fab fa-twitter"></i>
+                            <a href="https://www.twitter.com/@Ntshepza1 ">
+                                <i class="fab fa-twitter "></i>
                             </a>
 
-                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BF9dmp3QlRESz8UGIDZrNLA%3D%3D">
-                                <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BF9dmp3QlRESz8UGIDZrNLA%3D%3D ">
+                                <i class="fab fa-linkedin "></i>
                             </a>
-                            <a href="https://github.com/ntshephe">
-                                <i class="fab fa-github"></i>
+                            <a href="https://github.com/ntshephe ">
+                                <i class="fab fa-github "></i>
                             </a>
                         </div>
                     </div>
 
-                    <div class="back-btn-wrap">
-                        <a href="#" class="back-btn">
-                            <i class="fas fa-chevron-up"></i>
+                    <div class="back-btn-wrap ">
+                        <a href="# " class="back-btn ">
+                            <i class="fas fa-chevron-up "></i>
                         </a>
                     </div>
                 </div>
@@ -585,35 +641,55 @@
         </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/isotope.pkgd.min.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="./js/isotope.pkgd.min.js "></script>
+    <script src="./js/app.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js " integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script type="text/javascript ">
+        (function() {
+            emailjs.init("e3A1eOwgwpO5bOT3B ");
+        })();
+    </script>
 
     <script type="text/javascript">
-        (function() {
-            emailjs.init("e3A1eOwgwpO5bOT3B");
-        })();
+        $(function() {
+            $('.chart').easyPieChart({
+                size: 160,
+                barColor: "#152238",
+                scaleLength: 0,
+                lineWidth: 15,
+                trackColor: "#525151",
+                lineCap: "circle",
+                animate: 10000,
+            });
+        });
     </script>
 
     <script>
         let clearemail = document.getElementById('Subscribe');
 
         function popup() {
-            swal("This feature is unavailable!", "Dear user, we appreciate your interest in receiving updates about our page, this feature will be updated soon. Please visit our page regularly for updates. Thank you!");
+            swal("This feature is unavailable! ", "Dear user, we appreciate your interest in receiving updates about our page, this feature will be updated soon. Please visit our page regularly for updates. Thank you! ");
             clearemail.reset();
         }
 
         function gotoContact() {
             swal({
-                title: "Great move!",
-                text: "Thank you for your interest, please contact me through the contact form provided above",
-                icon: "success",
-                button: "Ok!",
+                title: "Great move! ",
+                text: "Thank you for your interest, please contact me through the contact form provided above ",
+                icon: "success ",
+                button: "Ok! ",
             }).then(function() {
-                window.location.href = "#contact";
+                window.location.href = "#contact ";
             });
 
 
@@ -625,22 +701,22 @@
             let phone = document.getElementById('phone')
             let email = document.getElementById('email')
             let message = document.getElementById('message')
-            let submit = document.querySelector(".submitBtn");
+            let submit = document.querySelector(".submitBtn ");
             let form = document.getElementById('myForm');
-            submit.addEventListener("click", (event) => {
+            submit.addEventListener("click ", (event) => {
                 event.preventDefault()
-                if (name.value == "" || surname.value == "" || phone.value == "" || email.value == "" || message.value == "") {
+                if (name.value == " " || surname.value == " " || phone.value == " " || email.value == " " || message.value == " ") {
                     swal({
-                        title: "Ooops....!",
-                        text: "Something went wrong...Ensure all fields are filled.",
-                        icon: "error",
-                        button: "Ok!",
+                        title: "Ooops....! ",
+                        text: "Something went wrong...Ensure all fields are filled. ",
+                        icon: "error ",
+                        button: "Ok! ",
                     });
                 } else {
                     sendMail(name.value, surname.value, phone.value, email.value, message.value)
                     swal({
-                        title: "Thank you!",
-                        text: "Your Email has been sent, you'll be contacted soon!",
+                        title: "Thank you! ",
+                        text: "Your Email has been sent, you 'll be contacted soon!",
                         icon: "success",
                         button: "Ok!",
                     });
@@ -665,7 +741,7 @@
         btnDownload.addEventListener("click", startDownload);
         async function startDownload() {
             let url = "test.pdf";
-            let fileName = "Mphofela Ntshephe's CV";
+            let fileName = "Mphofela Ntshephe's CV ";
             const res = await fetch(url);
             const blob = await res.blob();
             saveAs(blob, fileName);
