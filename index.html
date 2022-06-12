@@ -21,10 +21,6 @@
         }
     </style>
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <link rel=”stylesheet” href=” sweetalert.css”>
-
 </head>
 
 <body>
@@ -50,7 +46,7 @@
                 <div class="container">
 
                     <div class="logo">
-                        <h4>Profile</h4>
+                        <h4>CareerMNC</h4>
                     </div>
 
                     <div class="links">
@@ -59,7 +55,7 @@
                                 <a href="#header">Home </a>
                             </li>
                             <li>
-                                <a href="#services">Technologies</a>
+                                <a href="#services">Services</a>
                             </li>
                             <li>
                                 <a href="#portfolio">Portfolio</a>
@@ -89,19 +85,17 @@
                 <div class="container grid-2">
                     <div class="column-1">
                         <h3 class="title-sm">Hello, i'm <span id="my-name">Mphofela Ntshephe </span> </h3>
-                        <h1 class="header-title" data-text="Software Developer!"><span id="soft">Soft</span><span id="ware">ware</span> <span id="deve">Deve</span><span id="loper">loper!</span></h1>
                         <p class="text">
                             A Software developer who's highly motivated, skilled, and looking for a mentorship and challenging career opportunity to learn and grow my skills, while delivering best and suitable software for your business.
                         </p>
 
-                        <a href="" class="btn-download" download="" id="btn-download">Download CV</a>
-
+                        <a href="wwa_web_app_portfolio.pdf" class="btn-download" download="Contact me for CV" id="btn-download">Download CV</a>
 
                     </div>
 
                     <div class="column-2 image">
                         <img src="./img/dotttttttt.svg" class="points point2" alt="" />
-                        <img src="./designs/undraw_progressive_app_m-9-ms.svg" class="img-element z-index" alt="" />
+                        <img src="./designs/undraw_static_assets_rpm6.svg" class="img-element z-index" alt="" />
                     </div>
 
                 </div>
@@ -330,7 +324,7 @@
                     </div>
                     <div class="column-2 image">
                         <img src="./img/dotttttttt.svg" class="points" alt="" />
-                        <img src="./designs/undraw_online_cv_re_gn0a.svg" class="z-index" alt="" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" />
+                        <img src="./img/undraw_active_options_re_8rj3.svg" class="z-index" alt="" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" />
                     </div>
                 </div>
 
@@ -469,7 +463,7 @@
             </div>
         </section>
 
-        <section class="contact " id="contact ">
+        <section class="contact" id="contact">
             <div class="container ">
                 <div class="contact-box " data-aos="zoom-in-down" data-aos-duration="1000">
                     <div class="contact-info ">
@@ -502,7 +496,7 @@
                     </div>
 
                     <div class="contact-form ">
-                        <h3 class="title ">Get In touch!</h3>
+                        <h3 class="title ">Expand your Reach!</h3>
 
                         <form id="myForm ">
                             <div class="row ">
@@ -510,14 +504,13 @@
                                 <input type="text " class="contact-input " id="surname " placeholder="Last Name ">
                             </div>
                             <div class="row ">
-                                <input type="tel " class="contact-input " id="phone " placeholder="Phone Number " maxlength="10 " pattern="\d{10} ">
+                                <input type="tel " class="contact-input " id="phone " placeholder="Phone Number " maxlength="10 ">
                                 <input type="email " class="contact-input " id="email " placeholder="Email add ">
                             </div>
                             <div class="row ">
                                 <textarea class="contact-input textarea " id="message " placeholder="message "></textarea>
                             </div>
-
-                            <button type="submit " id="submit " class="submitBtn ">Submit</button>
+                            <button type="submit" class="submit" id="submit"> Send</button>
 
                         </form>
 
@@ -529,14 +522,13 @@
         </section>
 
 
-        <section class="hireme " id="hireme ">
-            <div class="container " data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <section class="hireme " id="hireme">
+            <div class="container ">
                 <h3 class="title ">Let's talk about the project</h3>
                 <p class="text ">
                     You can tell us what's hurting your business and we'll reach far beyond the ordinary to ensure a major sucess in your daily business objectives.
                 </p>
-
-                <a onclick="gotoContact() " id="hire-me " class="btn ">Hire me</a>
+                <a onclick="gotoContact() " id="hire-me " class="btn">Hire me</a>
             </div>
         </section>
 
@@ -548,7 +540,7 @@
                 <div class="grid-3-col footer-about ">
                     <h3 class="title-sm ">About Me</h3>
                     <p class="text ">
-                        A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company.
+                        A motivated individual with in-depth knowledge of programming languages and development tools, seeking a position in a growth-oriented company.
                     </p>
                 </div>
                 <div class="grid-3-col footer-links ">
@@ -648,6 +640,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js "></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
@@ -675,13 +668,6 @@
     </script>
 
     <script>
-        let clearemail = document.getElementById('Subscribe');
-
-        function popup() {
-            swal("This feature is unavailable! ", "Dear user, we appreciate your interest in receiving updates about our page, this feature will be updated soon. Please visit our page regularly for updates. Thank you! ");
-            clearemail.reset();
-        }
-
         function gotoContact() {
             swal({
                 title: "Great move! ",
@@ -689,10 +675,8 @@
                 icon: "success ",
                 button: "Ok! ",
             }).then(function() {
-                window.location.href = "#contact ";
+                window.location.href = "#contact";
             });
-
-
         }
 
         function validate() {
@@ -701,36 +685,47 @@
             let phone = document.getElementById('phone')
             let email = document.getElementById('email')
             let message = document.getElementById('message')
-            let submit = document.querySelector(".submitBtn ");
+            let submit = document.querySelector('send')
             let form = document.getElementById('myForm');
             submit.addEventListener("click ", (event) => {
                 event.preventDefault()
                 if (name.value == " " || surname.value == " " || phone.value == " " || email.value == " " || message.value == " ") {
                     swal({
-                        title: "Ooops....! ",
-                        text: "Something went wrong...Ensure all fields are filled. ",
-                        icon: "error ",
+                        title: "Field(s) Empty",
+                        text: "Please complete all the fields",
+                        icon: "error",
                         button: "Ok! ",
                     });
                 } else {
-                    sendMail(name.value, surname.value, phone.value, email.value, message.value)
-                    swal({
-                        title: "Thank you! ",
-                        text: "Your Email has been sent, you 'll be contacted soon!",
-                        icon: "success",
-                        button: "Ok!",
-                    });
+                    sendMail();
+                    sucess();
+                    console.log("Email send!");
                     form.reset();
                 }
 
-            })
-
+            });
         }
-        validate()
+        validate();
+
+        function sucess() {
+            swal({
+                title: "Good job!",
+                text: "You submitted your form!",
+                icon: "success",
+            });
+        }
+
+        function error() {
+            swal({
+                title: "Error",
+                text: "Something went wrong, Please try again later.",
+                icon: "error",
+            });
+        }
 
         function sendMail(name, surname, phone, email, message) {
             emailjs.send("service_w3ovw88", "template_coxog1n", {
-                from_name: name + " " + surname + ", Phone No: " + phone,
+                from_name: name + " " + surname + +phone,
                 to_name: email,
                 message: message,
             });
