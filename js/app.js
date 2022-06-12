@@ -18,12 +18,10 @@ function firstCardShowText() {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-        btnText.style.backgroundColor = '#00ff00'
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        btnText.style.backgroundColor = '#F81894'
     }
 }
 
@@ -36,12 +34,11 @@ function secondCardShowText() {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-        btnText.style.backgroundColor = '#00ff00'
+
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        btnText.style.backgroundColor = '#F81894'
 
     }
 }
@@ -57,12 +54,10 @@ function thirdCardShowText() {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-        btnText.style.backgroundColor = '#00ff00'
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        btnText.style.backgroundColor = '#F81894'
 
     }
 }
@@ -76,12 +71,10 @@ function forthCardShowText() {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-        btnText.style.backgroundColor = '#00ff00'
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        btnText.style.backgroundColor = '#F81894'
 
     }
 }
@@ -95,12 +88,10 @@ function firthCardShowText() {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-        btnText.style.backgroundColor = '#00ff00'
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        btnText.style.backgroundColor = '#F81894'
 
     }
 }
@@ -114,12 +105,10 @@ function sixCardShowText() {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-        btnText.style.backgroundColor = '#00ff00'
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        btnText.style.backgroundColor = '#F81894'
 
     }
 }
@@ -145,6 +134,7 @@ function showSkills() {
 
 function closeMenu() {
     navbar.classList.remove("open");
+
 }
 
 hamburger_menu.addEventListener("click", () => {
