@@ -46,7 +46,7 @@
                 <div class="container">
 
                     <div class="logo">
-                        <h4>MNCProfile</h4>
+                        <h4>CareerMNC</h4>
                     </div>
 
                     <div class="links">
@@ -495,22 +495,25 @@
                         </div>
                     </div>
 
-                    <div class="contact-form">
-                        <h3 class="title">Expand your Reach!</h3>
-                        <form id="myForm">
-                            <div class="row">
-                                <input type="text" class="contact-input" name="name" placeholder="First Name">
-                                <input type="text" class="contact-input" name="surname" placeholder="Last Name">
+                    <div class="contact-form ">
+                        <h3 class="title ">Expand your Reach!</h3>
+
+                        <form id="myForm ">
+                            <div class="row ">
+                                <input type="text " class="contact-input " id="name " placeholder="First Name ">
+                                <input type="text " class="contact-input " id="surname " placeholder="Last Name ">
                             </div>
-                            <div class="row">
-                                <input type="tel" class="contact-input" name="phone" placeholder="Phone Number" maxlength="10">
-                                <input type="email" class="contact-input" name="email" placeholder="Email add">
+                            <div class="row ">
+                                <input type="tel " class="contact-input " id="phone " placeholder="Phone Number " maxlength="10 ">
+                                <input type="email " class="contact-input " id="email " placeholder="Email add ">
                             </div>
-                            <div class="row">
-                                <textarea class="contact-input textarea" name="message" placeholder="message"></textarea>
+                            <div class="row ">
+                                <textarea class="contact-input textarea " id="message " placeholder="message "></textarea>
                             </div>
-                            <button type="submit" class="submit" id="submit">Send</button>
+                            <button type="submit" class="submit" id="submit"> Send</button>
+
                         </form>
+
                     </div>
 
 
@@ -644,58 +647,12 @@
     </script>
 
 
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    
-    <script>
-        // Replace with your EmailJS user ID and template ID
-        const USER_ID = 'e3A1eOwgwpO5bOT3B';
-        const TEMPLATE_ID = 'template_dhfxjjq';
-    
-        function sendEmail() {
-            const form = document.getElementById('myForm');
-            const name = form.name.value;
-            const surname = form.surname.value;
-            const phone = form.phone.value;
-            const email = form.email.value;
-            const message = form.message.value;
-    
-            emailjs.init(USER_ID);
-    
-            const templateParams = {
-                name,
-                surname,
-                phone,
-                email,
-                message,
-            };
-    
-            emailjs.send('default_service', TEMPLATE_ID, templateParams)
-                .then((response) => {
-                    console.log('Email sent successfully!', response);
-                    // Optionally, display a success message to the user
-                    alert('Email sent successfully!');
-                }, (error) => {
-                    console.error('Failed to send email:', error);
-                    // Optionally, display an error message to the user
-                    alert('Failed to send email. Please try again later.');
-                });
-        }
-    
-        document.getElementById('submit').addEventListener('click', function (event) {
-            event.preventDefault();
-            sendEmail();
-        });
-    </script>
-    
-
-
     <script type="text/javascript ">
         (function() {
-            emailjs.init("e3A1eOwgwpO5bOT3B");
+            emailjs.init("e3A1eOwgwpO5bOT3B ");
         })();
     </script>
 
-    
     <script type="text/javascript">
         $(function() {
             $('.chart').easyPieChart({
