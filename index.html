@@ -495,27 +495,24 @@
                         </div>
                     </div>
 
-                    <div class="contact-form ">
-                        <h3 class="title ">Expand your Reach!</h3>
-
-                        <form id="myForm ">
-                            <div class="row ">
-                                <input type="text " class="contact-input " id="name " placeholder="First Name ">
-                                <input type="text " class="contact-input " id="surname " placeholder="Last Name ">
+                    <div class="contact-form">
+                        <h3 class="title">Expand your Reach!</h3>
+                    
+                        <form id="myForm">
+                            <div class="row">
+                                <input type="text" class="contact-input" id="name" placeholder="First Name">
+                                <input type="text" class="contact-input" id="surname" placeholder="Last Name">
                             </div>
-                            <div class="row ">
-                                <input type="tel " class="contact-input " id="phone " placeholder="Phone Number " maxlength="10 ">
-                                <input type="email " class="contact-input " id="email " placeholder="Email add ">
+                            <div class="row">
+                                <input type="tel" class="contact-input" id="phone" placeholder="Phone Number" maxlength="10">
+                                <input type="email" class="contact-input" id="email" placeholder="Email Address">
                             </div>
-                            <div class="row ">
-                                <textarea class="contact-input textarea " id="message " placeholder="message "></textarea>
+                            <div class="row">
+                                <textarea class="contact-input textarea" id="message" placeholder="Message"></textarea>
                             </div>
-                            <button type="submit" class="submit" id="submit"> Send</button>
-
+                            <button type="button" class="btn_sent_email" id="btn_sent_email">Send</button>
                         </form>
-
                     </div>
-
 
                 </div>
             </div>
@@ -646,52 +643,10 @@
         AOS.init();
     </script>
 
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    
-    <script>
-        // Replace with your EmailJS user ID and template ID
-        const USER_ID = 'e3A1eOwgwpO5bOT3B';
-        const TEMPLATE_ID = 'dhfxjjq';
-    
-        function sendEmail() {
-            const form = document.getElementById('myForm');
-            const name = form.name.value;
-            const surname = form.surname.value;
-            const phone = form.phone.value;
-            const email = form.email.value;
-            const message = form.message.value;
-    
-            emailjs.init(USER_ID);
-    
-            const templateParams = {
-                name,
-                surname,
-                phone,
-                email,
-                message,
-            };
-    
-            emailjs.send('default_service', TEMPLATE_ID, templateParams)
-                .then((response) => {
-                    console.log('Email sent successfully!', response);
-                    // Optionally, display a success message to the user
-                    alert('Email sent successfully!');
-                }, (error) => {
-                    console.error('Failed to send email:', error);
-                    // Optionally, display an error message to the user
-                    alert('Failed to send email. Please try again later.');
-                });
-        }
-    
-        document.getElementById('submit').addEventListener('click', function (event) {
-            event.preventDefault();
-            sendEmail();
-        });
-    </script>
-    
-<script type="text/javascript ">
+
+    <script type="text/javascript ">
         (function() {
-            emailjs.init("e3A1eOwgwpO5bOT3B");
+            emailjs.init("e3A1eOwgwpO5bOT3B ");
         })();
     </script>
 
@@ -721,58 +676,6 @@
             });
         }
 
-        function validate() {
-            let name = document.getElementById('name')
-            let surname = document.getElementById('surname')
-            let phone = document.getElementById('phone')
-            let email = document.getElementById('email')
-            let message = document.getElementById('message')
-            let submit = document.querySelector('send')
-            let form = document.getElementById('myForm');
-            submit.addEventListener("click ", (event) => {
-                event.preventDefault()
-                if (name.value == " " || surname.value == " " || phone.value == " " || email.value == " " || message.value == " ") {
-                    swal({
-                        title: "Field(s) Empty",
-                        text: "Please complete all the fields",
-                        icon: "error",
-                        button: "Ok! ",
-                    });
-                } else {
-                    sendMail();
-                    sucess();
-                    console.log("Email send!");
-                    form.reset();
-                }
-
-            });
-        }
-        validate();
-
-        function sucess() {
-            swal({
-                title: "Good job!",
-                text: "You submitted your form!",
-                icon: "success",
-            });
-        }
-
-        function error() {
-            swal({
-                title: "Error",
-                text: "Something went wrong, Please try again later.",
-                icon: "error",
-            });
-        }
-
-        function sendMail(name, surname, phone, email, message) {
-            emailjs.send("service_w3ovw88", "template_coxog1n", {
-                from_name: name + " " + surname + +phone,
-                to_name: email,
-                message: message,
-            });
-        }
-
 
         let btnDownload = document.querySelector("btn-download");
         btnDownload.addEventListener("click", startDownload);
@@ -784,6 +687,112 @@
             saveAs(blob, fileName);
         }
     </script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("5PrepFL-pRJRe6aFZ");  // Replace with your EmailJS User ID
+   })();
+</script>
+
+
+<script>
+    document.getElementById("btn_sent_email").addEventListener("click", function(event) {
+        // Get the input values
+        var name = document.getElementById("name").value.trim();
+        var surname = document.getElementById("surname").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var message = document.getElementById("message").value.trim();
+
+        // Validate the form
+        if (name === "") {
+            swal({
+                title: "Missing First Name!",
+                text: "Please enter your first name.",
+                icon: "warning",
+                button: "Ok"
+            });
+            return;
+        }
+        if (surname === "") {
+            swal({
+                title: "Missing Last Name!",
+                text: "Please enter your last name.",
+                icon: "warning",
+                button: "Ok"
+            });
+            return;
+        }
+        if (phone === "" || phone.length !== 10 || isNaN(phone)) {
+            swal({
+                title: "Invalid Phone Number!",
+                text: "Please enter a valid 10-digit phone number.",
+                icon: "warning",
+                button: "Ok"
+            });
+            return;
+        }
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (email === "" || !emailPattern.test(email)) {
+            swal({
+                title: "Invalid Email!",
+                text: "Please enter a valid email address.",
+                icon: "warning",
+                button: "Ok"
+            });
+            return;
+        }
+        if (message === "") {
+            swal({
+                title: "Missing Message!",
+                text: "Please enter your message.",
+                icon: "warning",
+                button: "Ok"
+            });
+            return;
+        }
+
+        // Send email using EmailJS
+        var templateParams = {
+            name: name,
+            surname: surname,
+            phone: phone,
+            email: email,
+            message: message
+        };
+
+        emailjs.send('service_jbqan1g', 'template_dhfxjjq', templateParams)
+            .then(function(response) {
+                // Success Alert
+                swal({
+                    title: "Email Sent!",
+                    text: "Your message has been sent successfully.",
+                    icon: "success",
+                    button: "Ok"
+                });
+
+                // Clear the form fields after successful email send
+                document.getElementById("name").value = "";
+                document.getElementById("surname").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+
+            }, function(error) {
+                // Error Alert
+                swal({
+                    title: "Error!",
+                    text: "There was an error sending your message. Please try again later.",
+                    icon: "error",
+                    button: "Ok"
+                });
+            });
+
+    });
+</script>
+
+
 </body>
 
 </html>
