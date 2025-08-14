@@ -1,798 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, install-scale=1.0" />
-    <title>
-        Portfolio Website
-    </title>
-
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        body {
-            background-image: url("./img/White_Background_generated.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntshephe Mphofela | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="container">
+            <a href="#hero" class="logo">Ntshephe Mphofela</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education-certs">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
     <main>
-
-        <header>
-
-            <div class="overlay overlay-lg">
-                <img src="./img/mandala.png" class="shape mandala" alt="">
-                <img src="./img/geometrical.png" class="shape geometrical" alt="">
-                <img src="./img/abstract.png" class="shape abstract" alt="">
-                <img src="./img/cubes.png" class="shape cubes" alt="">
-                <img src="./img/code.png" class="shape code" alt="">
-                <img src="./img/heart.png" class="shape heart" alt="">
-                <img src="./img/lettern.png" class="shape lettern" alt="">
-                <img src="./img/hexagon.png" class="shape hexagonshape" alt="" />
-                <img src="./img/dotttttttt.svg" class="points point1" alt="" />
-
-            </div>
-
-            <nav>
-                <div class="container">
-
-                    <div class="logo">
-                        <h4>CareerMNC</h4>
-                    </div>
-
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="#header">Home </a>
-                            </li>
-                            <li>
-                                <a href="#services">Services</a>
-                            </li>
-                            <li>
-                                <a href="#portfolio">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#about">About Me</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contacts</a>
-                            </li>
-                            <li>
-                                <a href="#hireme" class="active">Hire me</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="hamburger-menu">
-                        <div class="bar"></div>
-                    </div>
-
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-image-container">
+                    <img src="images/profilepic.png" alt="Ntshephe Crecious Mphofela" class="profile-pic">
                 </div>
-
-            </nav>
-
-            <div class="header-content">
-                <div class="container grid-2">
-                    <div class="column-1">
-                        <h3 class="title-sm">Hello, i'm <span id="my-name">Mphofela Ntshephe </span> </h3>
-                        <p class="text">
-                            A Software developer who's highly motivated, skilled, and looking for a mentorship and challenging career opportunity to learn and grow my skills, while delivering best and suitable software for your business.
-                        </p>
-
-                        <a href="wwa_web_app_portfolio.pdf" class="btn-download" download="Contact me for CV" id="btn-download">Download CV</a>
-
+                <div class="hero-text">
+                    <h1>Ntshephe Crecious Mphofela</h1>
+                    <p class="role">Fraud Analyst & BI Analyst</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Johannesburg, Gauteng, South Africa</p>
+                    <p class="tagline">Results-driven Fraud Analyst & BI Analyst leveraging data to detect fraud, enhance decision-making, and optimize processes</p>
+                    <div class="hero-contact">
+                        <p><i class="fas fa-envelope"></i> ntshephecrecious@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i> +27 72 879 5836</p>
                     </div>
-
-                    <div class="column-2 image">
-                        <img src="./img/dotttttttt.svg" class="points point2" alt="" />
-                        <img src="./designs/undraw_static_assets_rpm6.svg" class="img-element z-index" alt="" />
-                    </div>
-
                 </div>
             </div>
-        </header>
+        </section>
 
-        <section class="services section" id="services">
+        <!-- About Me Section -->
+        <section id="about" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h3 class="title" data-title="What I do"> Technologies</h3>
-                    <p class="text">I've worked with a range of technologies in the software development world. From back-end to Design.
-                    </p>
-                    </h3>
-                </div>
-
-                <div class="cards">
-                    <div class="card-wrap" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="card" data-card="CODE">
-                            <div class="card-content">
-                                <img src="./img/software.png" class="icon" alt="">
-                                <h3 class="title-sm">Software Development</h3>
-                                <p class="text">Researching, designing, implementing, and managing software programs. Testing and evaluating new programs. <span id="dots">...</span> <span id="more"> Identifying areas for modification in existing programs and subsequently
-                                    developing these modifications. Writing and developing efficient code.</span>
-                                </p>
-                                <a onclick="firstCardShowText()" id="btn firstReadMore" class="btn firstReadMore"> Read more</a>
-                            </div>
-                        </div>
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a results-driven professional with over 3 years of experience in ETL development, data warehousing, and fraud-detection. My expertise spans across business intelligence visualization, data governance, risk compliance, and stakeholder collaboration. My core strengths lie in data governance, risk compliance, stakeholder collaboration, and process optimization. I have a proven track record of improving fraud detection accuracy and automating manual processes to enhance operational efficiency. I am passionate about data-driven problem-solving and technology innovation, constantly seeking new ways to leverage data analytics to drive business value and enhance decision-making processes.</p>
                     </div>
-
-
-                    <div class="card-wrap" data-aos="flip-up" data-aos-duration="1000">
-                        <div class="card" data-card="UI/UX">
-                            <div class="card-content">
-                                <img src="./img/graphicdesign.png" class="icon" alt="">
-                                <h3 class="title-sm">Web Design</h3>
-                                <p class="text">Plan, Create and code internet sites. Creating the design and layout of a website or web pages.<span id="secondDots">...</span><span id="secondMore"></span>
-                                </p>
-                                <a onclick="secondCardShowText()" id="btn secondReadMore" class="btn secondReadMore"> Read more</a>
-                            </div>
+                    <div class="about-stats-grid">
+                        <div class="stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>3+ Years Experience</h3>
+                            <p>in ETL, data warehousing and fraud detection</p>
                         </div>
-                    </div>
-                    <div class="card-wrap" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="card" data-card="TECH">
-                            <div class="card-content">
-                                <img src="./img/technicalsupport.png" class="icon" alt="">
-                                <h3 class="title-sm">Technical Support</h3>
-                                <p class="text">Manage, Maintain, and repair IT systems. including the diagnostic and reparing faults, resolving network issues, and<span id="thirdDots">...</span><span id="thirdMore"> installing and configuring hardware and software.</span>
-                                </p>
-                                <a onclick="thirdCardShowText()" id="btn thirdReadMore" class="btn thirdReadMore"> Read more</a>
-                            </div>
+                        <div class="stat-item">
+                            <i class="fas fa-database"></i>
+                            <h3>Data-Driven</h3>
+                            <p>Leveraging analytics for enhanced decision making</p>
                         </div>
-                    </div>
-
-
-                    <div class="card-wrap" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="card" data-card="Mobile">
-                            <div class="card-content">
-                                <img src="./img/mobile-development.png" class="icon" alt="">
-                                <h3 class="title-sm">Android Development</h3>
-                                <p class="text">Create, Maintain and implement source code to develop mobile apps and mobile platforms programs that meets <span id="forthDots">...</span> <span id="forthMore">
-                                         the needs amd requirements of the client using Java or c++ programming language.</span>
-                                </p>
-                                <a onclick="forthCardShowText()" id="btn forthReadMore" class="btn forthReadMore"> Read more</a>
-                            </div>
+                        <div class="stat-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Fraud Detection</h3>
+                            <p>Advanced pattern identification and analysis</p>
                         </div>
-                    </div>
-
-
-                    <div class="card-wrap" data-aos="flip-up" data-aos-duration="1000">
-                        <div class="card" data-card="Database">
-                            <div class="card-content">
-                                <img src="./img/database-storage.png" class="icon" alt="">
-                                <h3 class="title-sm">Database Design</h3>
-                                <p class="text">Plan, Create and code local and server based databases using SQLite, Firebase, MySql. Identify needs for databases,<span id="firthDots">...</span> <span id="firthMore">and conduct testing and implement improvements while monitoring database
-                                        performance</span>
-                                </p>
-                                <a onclick="firthCardShowText()" id="btn firthReadMore" class="btn firthReadMore"> Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="card" data-card="Desk">
-                            <div class="card-content">
-                                <img src="./img/technical-support.png" class="icon" alt="">
-                                <h3 class="title-sm">IT HelpDesk</h3>
-                                <p class="text">Serving as the first point of contact for customers seeking technical assistance over the phone or email.<span id="sixDots">...</span><span id="sixMore"> 
-                                        Performing remote troubleshooting through diagnostic techniques and pertinent questions and determining the best solutions based on the issues and details provided.
-                                    </span>
-                                </p>
-                                <a onclick="sixCardShowText()" id="btn sixReadMore" class="btn sixReadMore"> Read more</a>
-                            </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Collaboration</h3>
+                            <p>Strong stakeholder engagement and teamwork</p>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
-        <section class="portfolio section" id="portfolio">
-            <div class="background-bg">
-                <div class="overlay overlay-sm">
-                    <img src="./img/mandala.png" class="shape mandala" alt="">
-                    <img src="./img/geometrical.png" class="shape geometrical" alt="">
-                    <img src="./img/abstract.png" class="shape abstract" alt="">
-                    <img src="./img/cubes.png" class="shape cubes" alt="">
-                    <img src="./img/code.png" class="shape code" alt="">
-                    <img src="./img/heart.png" class="shape heart" alt="">
-                    <img src="./img/lettern.png" class="shape lettern" alt="">
-                    <img src="./img/hexagon.png" class="shape hexagonshape" alt="" />
-                </div>
-            </div>
-
+        <!-- Skills Section -->
+        <section id="skills" class="section gray-bg">
             <div class="container">
-                <div class="section-header">
-                    <h3 class="title" data-title="My Work">Portfolio</h3>
-                </div>
-                <div class="section-body">
-                    <div class="filter">
-                        <buttun class="filter-btn active" data-filter="*">All</buttun>
-                        <buttun class="filter-btn" data-filter=".ui">UI/UX</buttun>
-                        <buttun class="filter-btn" data-filter=".webdev">Web Dev</buttun>
-                        <buttun class="filter-btn" data-filter=".appdev">Mobile App</buttun>
-                        <buttun class="filter-btn" data-filter=".mylogo">Logo Design</buttun>
-                    </div>
-
-                    <div class="grid">
-                        <div class="grid-item mylogo">
-                            <div class="gallery-image">
-                                <img src="./designs/serage logo.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>Adobe Illustrator Design</h3>
-                                    </div>
-                                </div>
-                            </div>
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming & Data Tools</h3>
+                        <div class="skill-item">
+                            <img src="images/python-48.png" alt="Python Icon">
+                            <span>Python</span>
                         </div>
-                        <div class="grid-item webdev">
-                            <div class="gallery-image">
-                                <img src="./designs/my web port.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>Web Development</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-sql-48.png" alt="SQL Icon">
+                            <span>SQL (T-SQL, Proc-SQL)</span>
                         </div>
-                        <div class="grid-item appdev">
-                            <div class="gallery-image">
-                                <img src="./designs/mightyAppMenu.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>App Development</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-power-bi-2021-48.png" alt="Power BI Icon">
+                            <span>Power BI</span>
                         </div>
-                        <div class="grid-item ui webdev">
-                            <div class="gallery-image">
-                                <img src="./designs/web pic.PNG" alt="">
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>Web Design</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="skill-item">
+                            <img src="images/saas.png" alt="SAS Viya Icon">
+                            <span>SAS Viya</span>
                         </div>
-
-                        <div class="grid-item appdev">
-                            <div class="gallery-image">
-                                <img src="./designs/edumileAdmin.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>App Development</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="skill-item">
+                            <img src="images/excel.png" alt="Excel Icon">
+                            <span>Advanced Excel</span>
                         </div>
-                        <div class="grid-item mylogo">
-                            <div class="gallery-image">
-                                <img src="./designs/tabole logo.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>Logo Design</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="skill-item">
+                            <img src="images/java.png" alt="Java Icon">
+                            <span>Java EE</span>
                         </div>
-                        <div class="grid-item ui">
-                            <div class="gallery-image">
-                                <img src="./designs/register.PNG" alt="" />
-                                <div class="img-overlay">
-                                    <div class="plus"></div>
-                                    <div class="img-discription">
-                                        <h3>UI Design</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="skill-item">
+                            <img src="images/cpp.png" alt="C++ Icon">
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/html-5.png" alt="HTML Icon">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/css-3.png" alt="CSS Icon">
+                            <span>CSS</span>
                         </div>
                     </div>
-
+                    <div class="skill-category">
+                        <h3>Analytics & BI</h3>
+                        <div class="skill-item">
+                            <img src="images/data-warehouse.png" alt="Data Warehousing Icon">
+                            <span>Data Warehousing</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/etl.png" alt="ETL Icon">
+                            <span>ETL Tools</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/fraud-prevention.png" alt="Fraud Detection Icon">
+                            <span>Fraud Detection</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/risk-assessment.png" alt="Risk Assessment Icon">
+                            <span>Risk Assessment</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-trend-48.png" alt="Trend Analysis Icon">
+                            <span>Trend Analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-kpi-64.png" alt="KPI Monitoring Icon">
+                            <span>KPI Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Database & Infrastructure</h3>
+                        <div class="skill-item">
+                            <img src="images/icons8-sql-server-48.png" alt="SQL Server Icon">
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-secure-cloud-48.png" alt="SSIS Icon">
+                            <span>SSIS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-neo4j-50.png" alt="Neo4J Icon">
+                            <span>Neo4J</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-query-64.png" alt="Power Query Icon">
+                            <span>Power Query</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-query-inner-join-right-48.png" alt="DAX Icon">
+                            <span>DAX</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/icons8-pivot-table-48.png" alt="Pivot Tables Icon">
+                            <span>Pivot Tables</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Stakeholder Engagement</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Detail-Oriented</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users-cog"></i>
+                            <span>Collaboration</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-gavel"></i>
+                            <span>Data Governance</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Process Optimization</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="about section" id="about">
+        <!-- Experience Section -->
+        <section id="experience" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h3 class="title" data-title="Who am i?"> About Me</h3>
-                </div>
-
-                <div class="section-body grid-2">
-                    <div class="column-1">
-                        <h3 class="title-sm" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Hello, i'm</h3>
-                        <p class="text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            Mphofela Ntshephe Crecious, A highly organized and motivated hard-working individual looking for a responsible programming position to gain practical experience and secure a responsible career opportunity to fully utilize my skills, while making a significant
-                            contribution to the success of the company.
-                        </p>
-
-                    </div>
-                    <div class="column-2 image">
-                        <img src="./img/dotttttttt.svg" class="points" alt="" />
-                        <img src="./img/undraw_active_options_re_8rj3.svg" class="z-index" alt="" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" />
-                    </div>
-                </div>
-
-                <div class="skills">
-                    <div class="container">
-                        <div class="text">
-                            <h2>Technical SKills</h2>
-                            <p>My Experiences and skills in Information Technology</p>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-timeline">
+                    <!-- New Role added here -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>Fraud Administration & Data</h3>
+                            <p class="company-name">RMB (Rand Merchant Bank)  | <span class="duration">Aug 2025 - Present</span></p>
+                            <ul>
+                                <li>Develop and maintain fraud detection dashboards, track suspicious activities, and implement proactive fraud prevention measures.</li>
+                                <li>Conduct SARS VAT funds verification and identify potential fraud in high-value transactions.</li>
+                                <li>Manage relationships with corporate clients to mitigate fraud risks and ensure compliance.</li>
+                                <li>Perform data audits, maintain clean datasets, and ensure accurate reporting for decision-making.</li>
+                                <li>Automate fraud case workflows, ETL processes, and reporting to improve efficiency.</li>
+                                <li>Work with investigators, compliance teams, and data specialists to address emerging threats.</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="skills-card">
-                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fab fa-deskpro"></i>
-                            <h4>Front-End</h4>
-                            <p>Advanced skills in designing user friendly interfaces</p>
-                        </div>
-                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fas fa-keyboard"></i>
-                            <h4>Back-End</h4>
-                            <p> Intermediate skills in coding back-end to support the front-end design</p>
-                        </div>
-                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fas fa-pencil-ruler"></i>
-                            <h4>Design</h4>
-                            <p> Advanced designing skills, including using Adobe illustrator to design Logo</p>
-                        </div>
-                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fas fa-mobile"></i>
-                            <h4>Data Analysis</h4>
-                            <p> Advanced skills in using SQL to monitor and troubleshoot data</p>
-                        </div>
-                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fab fa-linux"></i>
-                            <h4>C++ Programming</h4>
-                            <p> Advanced skills in coding IOS and desktop applications using c++</p>
-                        </div>
-                        <div class="cardskill" data-aos="flip-up" data-aos-duration="1000">
-                            <i class=" fab fa-html5 "></i>
-                            <h4>Html and CSS</h4>
-                            <p> Advanced skills in coding front-end pages with html and css</p>
-                        </div>
-                        <div class="cardskill " data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fab fa-java"></i>
-                            <h4>javascript</h4>
-                            <p> Basic skills in javascript, jquery and reactjs </p>
-                        </div>
-                        <div class="cardskill " data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fas fa-database "></i>
-                            <h4>Database</h4>
-                            <p> Advanced skills in creating, and modifying PL/SQl, SQLite, Firebase and MySql databses </p>
-                        </div>
-                        <div class="cardskill " data-aos="flip-up" data-aos-duration="1000">
-                            <i class="fab fa-android"></i>
-                            <h4>Java Android Development</h4>
-                            <p> Superp skills in developing android applications with android studio</p>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>Fraud Data Analyst & BI Analyst</h3>
+                            <p class="company-name">FNB (First National Bank) | <span class="duration">July 2023 - August 2025</span></p>
+                            <ul>
+                                <li>Leading fraud detection initiatives and business intelligence analytics.</li>
+                                <li>Improved fraud detection accuracy by 15% through advanced pattern identification.</li>
+                                <li>Automated manual data entry processes, reducing errors by 30%.</li>
+                                <li>Designed comprehensive Power BI dashboards for KPI monitoring.</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="personal-skills">
-                    <div class="text">
-                        <h2>Personal Skills</h2>
-                        <p>My personal and work environment skills</p>
-                    </div>
-                    <div class="personal-skills-card">
-                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="90"> 90%</div>
-                            <h2>Creativity</h2>
-                        </div>
-                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="85"> 85%</div>
-                            <h2>Problem Solving</h2>
-                        </div>
-                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="80"> 80%</div>
-                            <h2>Communication</h2>
-                        </div>
-                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="75"> 75%</div>
-                            <h2>Organizational</h2>
-                        </div>
-                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="95"> 95%</div>
-                            <h2>Team Work</h2>
-                        </div>
-                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="78"> 78%</div>
-                            <h2>Flexibility and Adaptability</h2>
-                        </div>
-                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="89"> 89%</div>
-                            <h2>Decision Making</h2>
-                        </div>
-                        <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="79"> 79%</div>
-                            <h2>Analytical Thinking</h2>
-                        </div>
-                        <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <div class="chart" data-percent="80"> 96%</div>
-                            <h2>Reliabilty and Patience</h2>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>Graduate BI Analyst</h3>
+                            <p class="company-name">FirstRand Group | <span class="duration">July 2022 - June 2023</span></p>
+                            <ul>
+                                <li>Delivered advanced analytics solutions and maintained data quality standards.</li>
+                                <li>Managed data quality processes, ensuring 95% reporting accuracy.</li>
+                                <li>Developed Real Time Clearance (RTC) dashboard.</li>
+                                <li>Collaborated with cross-functional teams to integrate data.</li>
+                            </ul>
                         </div>
                     </div>
-
-                </div>
-
-
-            </div>
-        </section>
-
-        <section class="records ">
-            <div class="overlay overlay-sm ">
-                <img src="./img/mandala.png " class="shape mandala " alt=" ">
-                <img src="./img/geometrical.png " class="shape geometrical " alt=" ">
-                <img src="./img/abstract.png " class="shape abstract " alt=" ">
-                <img src="./img/cubes.png " class="shape cubes " alt=" ">
-                <img src="./img/code.png " class="shape code " alt=" ">
-                <img src="./img/heart.png " class="shape heart " alt=" ">
-                <img src="./img/lettern.png " class="shape lettern " alt=" ">
-                <img src="./img/hexagon.png " class="shape hexagonshape " alt=" " />
-            </div>
-            <div class="container ">
-                <div class="wrap " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="record-circle active ">
-                        <h2 class="number " data-num="5 ">0</h2>
-                        <h4 class="sub-title ">Projects</h4>
-                    </div>
-                </div>
-
-                <div class="wrap " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="record-circle ">
-                        <h2 class="number " data-num="20 ">0</h2>
-                        <h4 class="sub-title ">Happy Clients</h4>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>IT Technician Trainee</h3>
+                            <p class="company-name">Limpopo Dept. of Sport, Arts, and Culture | <span class="duration">Dec 2020 - May 2021</span></p>
+                            <ul>
+                                <li>Provided technical support and managed network infrastructure.</li>
+                                <li>Configured and deployed software solutions across departments.</li>
+                                <li>Performed software troubleshooting and system maintenance.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact" id="contact">
-            <div class="container ">
-                <div class="contact-box " data-aos="zoom-in-down" data-aos-duration="1000">
-                    <div class="contact-info ">
-                        <h3 class="title ">Let's have a talk!</h3>
-                        <p class="text ">
-                            Want to get in touch with me? feel free to contact me on the below information.
-                        </p>
-                        <div class="information-wrap ">
-                            <div class="information ">
-                                <div class="contact-icon ">
-                                    <i class="fas fa-map-marker-alt "></i>
-                                </div>
-                                <p class="info-text ">117 Block T Soshanguve, Pretoria, 0152</p>
-                            </div>
+        <!-- Projects Section -->
+        <section id="projects" class="section gray-bg">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="analytics">Analytics</button>
+                    <button class="filter-btn" data-filter="bi">Business Intelligence</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="investigation">Investigation</button>
+                    <button class="filter-btn" data-filter="dataeng">Data Engineering</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="analytics bi">
+                        
+                        <h3>Fraud Detection Reporting Dashboard</h3>
+                        <p>Comprehensive Power BI dashboard for real-time fraud monitoring and analysis.</p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>T-SQL</span>
+                            <span>DAX</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="bi">
+                       
+                        <h3>Real Time Clearance (RTC) Dashboard</h3>
+                        <p>Advanced BI solution for funds verification and real-time monitoring.</p>
+                        <div class="project-tech">
+                            <span>SAS Viya</span>
+                            <span>Excel</span>
+                            <span>Power BI</span>
+                            <span>ETL</span>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="ml">
+                       
+                        <h3>Predictive Fraud Detection Models</h3>
+                        <p>Developed machine learning models to identify suspicious patterns before they impact operations.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>T-SQL</span>
+                            <span>SAS</span>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="investigation">
+                        
+                        <h3>Ponzi Scheme Investigation & Syndicate Analysis</h3>
+                        <p>Comprehensive framework for identifying and analyzing complex fraud schemes.</p>
+                        <div class="project-tech">
+                            <span>SAS Viya</span>
+                            <span>Excel</span>
+                            <span>Bank Hogan</span>
+                            <span>XDS</span>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="dataeng">
+                       
+                        <h3>Data Migration: SECM to SAS Viya</h3>
+                        <p>Managed a large-scale data migration project for improved analytics.</p>
+                        <div class="project-tech">
+                            <span>SAS Viya</span>
+                            <span>SQL</span>
+                            <span>ETL</span>
+                            <span>Data Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="information ">
-                                <div class="contact-icon ">
-                                    <i class="fas fa-paper-plane "></i>
-                                </div>
-                                <p class="info-text ">ntshephecrecious@gmail.com</p>
+        <!-- Education & Certifications Section -->
+        <section id="education-certs" class="section">
+            <div class="container">
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="education-certs-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-item">
+                                <h4>Advanced Diploma in Computer Sciences</h4>
+                                <p>Tshwane University of Technology</p>
+                                <p class="course-status">In progress</p>
                             </div>
-
-                            <div class="information ">
-                                <div class="contact-icon ">
-                                    <i class="fas fa-phone "></i>
-                                </div>
-                                <p class="info-text ">0728795836 / 0683286012</p>
+                            <div class="list-item">
+                                <h4>National Diploma: Information Technology</h4>
+                                <p>Tshwane University of Technology</p>
+                                <p class="course-status">Completed</p>
                             </div>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-certificate"></i>
+                            <h3>Certifications</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-item">
+                                <h4>Responsive Web Design</h4>
+                                <p>FreeCodeCamp.org</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Data Analytics Toolbox</h4>
+                                <p>Udemy</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>PL-900 Power Platform Fundamentals</h4>
+                                <p>Udemy</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Introduction to Cybercrime</h4>
+                                <p>Udemy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="contact-form">
-                        <h3 class="title">Expand your Reach!</h3>
-                    
-                        <form id="myForm">
-                            <div class="row">
-                                <input type="text" class="contact-input" id="name" placeholder="First Name">
-                                <input type="text" class="contact-input" id="surname" placeholder="Last Name">
+        <!-- Accomplishments Section -->
+        <section id="accomplishments" class="section gray-bg">
+            <div class="container">
+                <h2 class="section-title">Key Accomplishments</h2>
+                <div class="accomplishments-grid">
+                    <div class="accomplishment-card">
+                        <i class="fas fa-percent"></i>
+                        <div class="value">30%</div>
+                        <p>Reduction in Manual Data Entry Errors</p>
+                    </div>
+                    <div class="accomplishment-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="value">15%</div>
+                        <p>Improvement in Fraud Detection Accuracy</p>
+                    </div>
+                    <div class="accomplishment-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <div class="value">95%</div>
+                        <p>Data Reporting Accuracy Achievement</p>
+                    </div>
+                    <div class="accomplishment-card">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="value">100%</div>
+                        <p>Successful Dashboard Implementations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info-card">
+                        <h3>Let's Connect</h3>
+                        <p>Ready to collaborate on your next data analytics project? Let's discuss how I can help drive your business forward.</p>
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>ntshephecrecious@gmail.com</p>
                             </div>
-                            <div class="row">
-                                <input type="tel" class="contact-input" id="phone" placeholder="Phone Number" maxlength="10">
-                                <input type="email" class="contact-input" id="email" placeholder="Email Address">
+                            <div class="detail-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <p>+27 72 879 5836</p>
                             </div>
-                            <div class="row">
-                                <textarea class="contact-input textarea" id="message" placeholder="Message"></textarea>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Johannesburg, Gauteng, South Africa</p>
                             </div>
-                            <button type="button" class="btn_sent_email" id="btn_sent_email">Send</button>
+                            <div class="detail-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/ntshephe-mphofela-04a2221a6" target="_blank">Connect with me</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="contact-form-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form">
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn">Send Message</button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
-
-
-        <section class="hireme " id="hireme">
-            <div class="container ">
-                <h3 class="title ">Let's talk about the project</h3>
-                <p class="text ">
-                    You can tell us what's hurting your business and we'll reach far beyond the ordinary to ensure a major sucess in your daily business objectives.
-                </p>
-                <a onclick="gotoContact() " id="hire-me " class="btn">Hire me</a>
-            </div>
-        </section>
-
     </main>
 
-    <footer class="footer ">
-        <div class="container ">
-            <div class="grid-3 ">
-                <div class="grid-3-col footer-about ">
-                    <h3 class="title-sm ">About Me</h3>
-                    <p class="text ">
-                        A motivated individual with in-depth knowledge of programming languages and development tools, seeking a position in a growth-oriented company.
-                    </p>
-                </div>
-                <div class="grid-3-col footer-links ">
-                    <h3 class="title-sm ">Links</h3>
-                    <ul>
-                        <li>
-                            <a href="#services ">Services</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio ">Portfolio</a>
-                        </li>
-
-                        <li>
-                            <a href="#about ">About</a>
-                        </li>
-
-                        <li>
-                            <a href="#contact ">Contact</a>
-                        </li>
-
-                        <li>
-                            <a href="#hireme ">Hire me</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-3-col footer-links ">
-                    <h3 class="title-sm ">Services</h3>
-                    <ul>
-                        <li>
-                            <a href="#portfolio ">App Development</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio ">Technical Support</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio ">Web Design</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio ">Database Design</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio ">Logo Design</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="bottom-footer ">
-                <div class="copyright ">
-                    <p class="text ">
-                        Copyrights&copy;2022 All rights reserved | By
-                        <span> Mphofela NC</span>
-                    </p>
-                </div>
-                <div class="followme-wrap ">
-                    <div class="followme ">
-                        <h3>Follow me</h3>
-                        <span class="footer-line "></span>
-                        <div class="social-media ">
-                            <a href="https://www.facebook.com/ntshepza.mphofela ">
-                                <i class="fab fa-facebook "></i>
-                            </a>
-
-                            <a href="https://www.twitter.com/@Ntshepza1 ">
-                                <i class="fab fa-twitter "></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BF9dmp3QlRESz8UGIDZrNLA%3D%3D ">
-                                <i class="fab fa-linkedin "></i>
-                            </a>
-                            <a href="https://github.com/ntshephe ">
-                                <i class="fab fa-github "></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="back-btn-wrap ">
-                        <a href="# " class="back-btn ">
-                            <i class="fas fa-chevron-up "></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <footer>
+        <div class="container">
+            <p>&copy; updated 2025 | Ntshephe Crecious Mphofela. All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-    <script src="./js/isotope.pkgd.min.js "></script>
-    <script src="./js/app.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js " integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
-    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js "></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
-    <script type="text/javascript ">
-        (function() {
-            emailjs.init("e3A1eOwgwpO5bOT3B ");
-        })();
-    </script>
-
-    <script type="text/javascript">
-        $(function() {
-            $('.chart').easyPieChart({
-                size: 160,
-                barColor: "#152238",
-                scaleLength: 0,
-                lineWidth: 15,
-                trackColor: "#525151",
-                lineCap: "circle",
-                animate: 10000,
-            });
-        });
-    </script>
-
-    <script>
-        function gotoContact() {
-            swal({
-                title: "Great move! ",
-                text: "Thank you for your interest, please contact me through the contact form provided above ",
-                icon: "success ",
-                button: "Ok! ",
-            }).then(function() {
-                window.location.href = "#contact";
-            });
-        }
-
-
-        let btnDownload = document.querySelector("btn-download");
-        btnDownload.addEventListener("click", startDownload);
-        async function startDownload() {
-            let url = "test.pdf";
-            let fileName = "Mphofela Ntshephe's CV ";
-            const res = await fetch(url);
-            const blob = await res.blob();
-            saveAs(blob, fileName);
-        }
-    </script>
-
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("5PrepFL-pRJRe6aFZ");  // Replace with your EmailJS User ID
-   })();
-</script>
-
-
-<script>
-    document.getElementById("btn_sent_email").addEventListener("click", function(event) {
-        // Get the input values
-        var name = document.getElementById("name").value.trim();
-        var surname = document.getElementById("surname").value.trim();
-        var phone = document.getElementById("phone").value.trim();
-        var email = document.getElementById("email").value.trim();
-        var message = document.getElementById("message").value.trim();
-
-        // Validate the form
-        if (name === "") {
-            swal({
-                title: "Missing First Name!",
-                text: "Please enter your first name.",
-                icon: "warning",
-                button: "Ok"
-            });
-            return;
-        }
-        if (surname === "") {
-            swal({
-                title: "Missing Last Name!",
-                text: "Please enter your last name.",
-                icon: "warning",
-                button: "Ok"
-            });
-            return;
-        }
-        if (phone === "" || phone.length !== 10 || isNaN(phone)) {
-            swal({
-                title: "Invalid Phone Number!",
-                text: "Please enter a valid 10-digit phone number.",
-                icon: "warning",
-                button: "Ok"
-            });
-            return;
-        }
-        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (email === "" || !emailPattern.test(email)) {
-            swal({
-                title: "Invalid Email!",
-                text: "Please enter a valid email address.",
-                icon: "warning",
-                button: "Ok"
-            });
-            return;
-        }
-        if (message === "") {
-            swal({
-                title: "Missing Message!",
-                text: "Please enter your message.",
-                icon: "warning",
-                button: "Ok"
-            });
-            return;
-        }
-
-        // Send email using EmailJS
-        var templateParams = {
-            name: name,
-            surname: surname,
-            phone: phone,
-            email: email,
-            message: message
-        };
-
-        emailjs.send('service_jbqan1g', 'template_dhfxjjq', templateParams)
-            .then(function(response) {
-                // Success Alert
-                swal({
-                    title: "Email Sent!",
-                    text: "Your message has been sent successfully.",
-                    icon: "success",
-                    button: "Ok"
-                });
-
-                // Clear the form fields after successful email send
-                document.getElementById("name").value = "";
-                document.getElementById("surname").value = "";
-                document.getElementById("phone").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("message").value = "";
-
-            }, function(error) {
-                // Error Alert
-                swal({
-                    title: "Error!",
-                    text: "There was an error sending your message. Please try again later.",
-                    icon: "error",
-                    button: "Ok"
-                });
-            });
-
-    });
-</script>
-
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
-
 </html>
